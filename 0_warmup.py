@@ -16,6 +16,7 @@ representatives = congress.read_congress_data()
 
 # 1. What type of object is held inside the 'representatives' variable?
 
+print(type(representatives))
 
 # 2. How many representatives are there?
 
