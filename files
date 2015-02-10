@@ -1,0 +1,2 @@
+f = open("congress", 'w')
+print(f)

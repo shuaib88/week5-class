@@ -5,7 +5,7 @@ class ElectedOfficial:
 
 
 def read_congress_data():
-  with open("congress.json") as f:
+  with open("congress.json", "r", encoding="utf-8") as f:
     data = json.load(f)
 
   rep_data = data["results"][0]["members"]
