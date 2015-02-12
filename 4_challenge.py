@@ -9,9 +9,15 @@
 from book_database import Book
 turing_book = Book.search('enigma')
 
+<<<<<<< HEAD
 # assert type(turing_book) is Book
 # assert turing_book.publisher == "Princeton University."
 # assert len(Book.pubishers) == 14
+=======
+assert type(turing_book) is Book
+assert turing_book.publisher == "Princeton University."
+assert len(Book.publishers) == 15
+>>>>>>> FETCH_HEAD
 
 
 # #####
