@@ -48,11 +48,15 @@ def read_congress_data():
   for person in rep_data:
     new_member = ElectedOfficial()
     new_member.name = "{0}, {1}".format(person["last_name"], person["first_name"])
+    # why use the format method here? - seems to run okay without it..
     new_member.party = person["party"]
     new_member.state = person["state"]
     new_member.loyalty_factor = float(person["votes_with_party_pct"])
     member_list.append(new_member)
+    print (new_member.name)
 
   return member_list
+  print(len(member_list))
 
-
+read_congress_data()
+print(len(member_list))
